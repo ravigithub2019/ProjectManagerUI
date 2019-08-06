@@ -1,0 +1,47 @@
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #f39090;
+}
+</style>
+
+    <div style="text-align:center">
+      <h1>
+        Project Management
+      </h1>
+      <nav >
+          <div >
+                <ul >
+                  <li> <a routerLink="/viewtask" routerLinkActive="active">View Task</a>
+                    <li> <a routerLink="/addProject" routerLinkActive="active">Add Project</a>
+                    <li> <a routerLink="/addtask" routerLinkActive="active">Add Task</a>
+                    <li> <a routerLink="/addUser" routerLinkActive="active">Add User</a>
+
+                </ul>
+            </div>
+        </nav>
+
+      <router-outlet></router-outlet>
